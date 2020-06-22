@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 // rafcp -> crear un functional component con proptypes
 
-const CounterApp = ( { value = 0 } ) => {
+const CounterApp = ( { value = 10 } ) => {
 
     const [counter, setCounter ] = useState( value ); // []
 
@@ -14,9 +14,9 @@ const CounterApp = ( { value = 0 } ) => {
 
     const handleSubtract = () => {
         setCounter( (c) => c -1  );
-    }
+    } 
 
-    const handleReset = () => setCounter(0);
+    const handleReset = () => setCounter(value);
 
     return (
         <>
@@ -30,7 +30,7 @@ const CounterApp = ( { value = 0 } ) => {
 }
 
 CounterApp.propTypes = {
-    value: PropTypes.number.isRequired
+    value: PropTypes.number
 }
 
 export default CounterApp;

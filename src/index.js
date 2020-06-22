@@ -8,7 +8,7 @@ import './index.css';
 // Renderizar
 const divRoot = document.querySelector('#app');
 
-// ReactDOM.render(<PrimeraApp saludo="Hola Mundo" /> , divRoot );
-ReactDOM.render(<CounterApp value={ 0 } /> , divRoot );
-
+// ReactDOM.render(<PrimeraApp saludo="Hola Mundo, soy Alejandro" /> , divRoot );
+ReactDOM.render( <CounterApp value = { 10 } /> , divRoot );
 console.log(divRoot);
+// 
